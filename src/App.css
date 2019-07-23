@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap|Raleway');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  display: grid;
+  width: 250px;
+  margin: 30px;
+  border-radius: 3px;
+  grid-template-areas: 'i i i i'
+                       'a a a a'
+                       'b b b c'
+                       'b b b c'
+                       'b b b c'
+                       'b b b c'
+}
+
+.btn{
+  border: none;
+  outline: none;
+  font-weight: bold;
+  background: #546e7a;
+  color: white;
+}
+.upper-area{
+  grid-area: i;
+  height: 90px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-family: "Montserrat";
+}
+.symbols-btns{
+  grid-area: a;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+
+}
+.num-btns{
+  grid-area: b;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 60px);
+}
+.extra-btns{
+  grid-area: c;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.symbol{
+  border: none;
+  outline: none;
+  background: #7e57c2;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  width: 60px;
+  display: inline-block;
+  height: 50px;
+}
+.extras{
+  border: none;
+  outline: none;
+  background: #455a64;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+.equals{
+  border: none;
+  outline: none;
+  font-family: 'Raleway';
+  background: #7e57c2;
+  color: white;
+  font-weight: bold;
+  grid-row:span 2;
+}
